@@ -62,7 +62,7 @@ kn.loginResult()
 
 ko = LINETCR.LINE()
 #ko.login(token="EmlryaX0p2Hh6AgRaGb3.mOSG1MHBcjvyM0tjBkZHeW.JVQQpJKxEaoqRMzFITNmnhWc9L54RJIAkh7MR1beHlw=")
-ko.login(token="EmoQHRSpSbfnD7vacBr4.dT3xRe4uCjM6Vzg7k5eETa.DEUe9kBAv+SdKGb1yi42OpyVGd4iIMYVr830bRnRxqc="
+ko.login(token="EmoQHRSpSbfnD7vacBr4.dT3xRe4uCjM6Vzg7k5eETa.DEUe9kBAv+SdKGb1yi42OpyVGd4iIMYVr830bRnRxqc=")
 ko.loginResult()
 
 kp = LINETCR.LINE()
