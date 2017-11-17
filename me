@@ -175,6 +175,21 @@ def bot(op):
                     pass
                 else:
                     cl.sendText(op.param1,str(wait["message"]))
+        if op.type == 17:
+            group = cl.getGroup(op.param1)
+            cb = Message()
+            cb.to = op.param1
+            cb.text = cl.getContact(op.param2).displayName + "\n🙏 สวัสดีครับผม 🙏\n🏆 ยินดีต้อนรับทุกท่าน 🏆\n\n[ ᴀᴅᴍɪɴ ʙᴏᴛ ]\n[ By.เพชร ทีมทดลองบอท ]"
+            cl.sendMessage(cb)
+            cb.text = cl.getContact(op.param2).displayName + "\n🇹🇭 รายชื่อกลุ่มโปรเเกรมทำงาน 🇹🇭\n" + group.name
+            cl.sendMessage(cb)
+
+        if op.type == 15:
+            if op.param2 in Bots:
+                return
+            cl.sendText(op.param1, "\n👋 เเล้วพบกันใหม่ 👋\n🙋 บายจร้าโชคดีนะครับ 🙋\n\n[ ᴀᴅᴍɪɴ ʙᴏᴛ ]\n[ By.เพชร ทีมทดลองบอท]")
+            print "MemberLeft"
+
 
         if op.type == 55:
             if op.param1 in wait2['readPoint']:
