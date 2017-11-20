@@ -6,7 +6,7 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="Em7pVfHsFYfPDlNRMIy6.3tHrCXSlxxV7l5g65M4UvG.tBw/Rs8JYi6wTO4AS1H6RTbc9WQR6m2jV+bHJ4h6uZc=")
 cl.loginResult()
 
 ki = kk = kc = cl 
@@ -27,8 +27,8 @@ Tag@@
 อ่าน
 
 [ผู้สร้างบอท]
-[By.ᴳᴜ ᵀᴇᵃᴍ ᴴa̴ᶜᴋ ᴮᴏᵀ]
-http://line.me/ti/p/~gurasta
+[By.เพชร ทีมทดลองบอท]
+http://line.me/ti/p/09T2waRE7l
 """
 KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
