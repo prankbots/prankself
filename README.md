@@ -5,6 +5,9 @@
 #### cek sider/cctv
 #### tampilkan pp
 #### autolike
+#### audio/musik
+#### translate bahasa
+#### Nuke/kickall
 #### DLL
 
 V2.1 editor_::
