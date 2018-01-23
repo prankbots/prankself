@@ -952,7 +952,7 @@ def bot(op):
             elif "B2name " in msg.text:
                 string = msg.text.replace("B2name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = ki2.getProfile())
+                    profile = ki2.getProfile()
                     profile.displayName = string
                     ki2.updateProfile(profile)
                     ki2.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
