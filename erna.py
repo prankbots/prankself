@@ -62,7 +62,7 @@ helpMessage="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́�
   ✰ Banlist
   ✰ Update
   ✰ Creator
-  ✰ Sc:"mid"
+  ✰ Mypict
   ✰ Ban "@"
   ✰ Unban "@"
   ✰ Sc @
@@ -111,7 +111,8 @@ helpMessage="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́�
      『B༘̈́̈́L༘̈́̈́Ä༘́̈́C༘̈́̈́K༘̈́̈́   ̈́Ö༘́̈́F༘̈́̈́ ̈́  G༘̈́̈́Ä༘́̈́M༘̈́̈́Ë༘́̈́R༘̈́̈́』
 (╚••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╝)
 """
-helo="====I AM SELFBOT TEAM BLACK OF GAMER"
+helo="""SILAHKAN GUNAKAN BOT NYA .JIKA KAMU MAU TAMBAHIN ATAU EDIT LAGI SCRIPT NYA SILAHKN
+TAPI TOLONG HARGAI SAYA UNTUK TIDAK MERUBAH LEBEL PRANKBOTS DAN AUTO ADD ATAU AUTO LIKE TERIMAKASIH :D"""
 
 KAC=[cl]
 mid = cl.getProfile().mid
@@ -122,7 +123,7 @@ mid = cl.getProfile().mid
 #ki5mid = ki5.getProfile().mid
 #ki6mid = ki6.getProfile().mid
 Bots=[mid]
-admsa = "u0dec0fbbf080d7204c19bce66bf78818"
+admsa = "mid kamu"
 
 wait = {
     'contact':False,
@@ -131,16 +132,30 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"""Open order Vip Smule.
-    Android & iPhone
-    song book.
-    Akun smule komplite(Vip +follower)  Murah aman & garansi.
-    Gift S & T 
-    Minat langsung PC
-    👇
-    http://line.me/ti/p/~iqo7511i""",
+    'message':""" 💥🔥【тнanĸѕ ғor add мe】🔥💥
+                              😎
+                         🖕🏻👕👊🏻
+                              👖
+                              👢
+          💥🔥AUTO ADD FRIEND🔥💥
+
+  ❂•••••••SPONSOR•••••••❂
+         https://line.me/R/ti/p/%40iya4481p
+   ☆★☆★☆★☆★☆★☆★☆
+        http://line.me/ti/p/~@sml1492z
+
+ ❂•••••••COSTUMER•••••••❂
+         http://line.me/ti/p/~@gnh2780p
+""",
     "lang":"JP",
-    "comment":"Thanks For Add Me",
+    "comment1":"""{AUTO LIKE BY}
+         https://line.me/R/ti/p/%40iya4481p
+   ☆★☆★☆★☆★☆★☆★☆
+        http://line.me/ti/p/~@sml1492z
+
+ ❂•••••••COSTUMER•••••••❂
+         http://line.me/ti/p/~@gnh2780p
+""",
     "commentOn":False,
     "likeOn":True,
     "commentBlack":{},
@@ -357,7 +372,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u0dec0fbbf080d7204c19bce66bf78818":
+                if msg.from_ == mid:
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -373,6 +388,7 @@ def bot(op):
             if msg.contentType == 16:
                 url = msg.contentMetadata["postEndUrl"]
                 cl.like(url[25:58], url[66:], likeType=1001)
+		cl.comment(url[25:58], url[66:], wait["comment1"])
         if op.type == 25:
             msg = op.message
             if msg.contentType == 13:
@@ -760,9 +776,9 @@ def bot(op):
                     cl.sendText(msg.to,"Can not be used outside the group")
                   else:
                     cl.sendText(msg.to,"Not for use less than group")
-            elif "Contact" == msg.text:
+            elif "Creator" == msg.text:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': msg.to}
+                msg.contentMetadata = {'mid': 'ufce863f62f40706c01fa4a3c3c4cb096'}
                 cl.sendMessage(msg)
             elif "Mymid" == msg.text:
                 cl.sendText(msg.to,mid)
@@ -912,6 +928,10 @@ def bot(op):
                     profile.statusMessage = string
                     cl.updateProfile(profile)
                     cl.sendText(msg.to,"􀜁􀇔􏿿Update Bio👉" + string + "👈")
+            elif msg.text in ["Mypict"]:
+                    h = cl.getContact(mid)
+                    cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+
 #------------------------------------------------------------------------------------------#
             elif "Cn " in msg.text:
                 string = msg.text.replace("Cn ","")
@@ -932,7 +952,7 @@ def bot(op):
             elif "B2name " in msg.text:
                 string = msg.text.replace("B2name ","")
                 if len(string.decode('utf-8')) <= 20:
-                    profile = ki2.getProfile()
+                    profile = ki2.getProfile())
                     profile.displayName = string
                     ki2.updateProfile(profile)
                     ki2.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
@@ -2938,7 +2958,7 @@ def bot(op):
                 cl.sendText(msg.to, "★[TRANSLATE]★\nTr-id ☆to indonesia☆\nTr-en ☆to english☆\nTr-jap ☆to japan☆\nTr-thai ☆to thailand☆\n_______________")
 
 #---------------------------------------------------
-            elif "ATM" in msg.text:
+            #elif "ATM" in msg.text:
 				cl.sendText(msg.to, "==BANK MANDIRI==\nno req:\n1270007723859\natas nama:\nSRI ROHANA")
 #---------------------------------------------------
             elif "Pict @" in msg.text:
@@ -3230,7 +3250,7 @@ def bot(op):
 #                        ki8.sendMessage(msg,g)
      #                   ki9.sendMessage(msg,g)
             elif 'ig ' in msg.text.lower():
-              if msg.from_ in admin:
+              #if msg.from_ in admin:
                 try:
                     instagram = msg.text.lower().replace("ig ","")
                     html = requests.get('https://www.instagram.com/' + instagram + '/?')
@@ -3252,7 +3272,7 @@ def bot(op):
                 except Exception as njer:
                 	cl.sendText(msg.to, str(njer))
             elif 'audio: ' in msg.text.lower():
-              if msg.from_ in admin:
+              #if msg.from_ in admin:
                 try:
                     songname = msg.text.lower().replace('audio: ','')
                     params = {'songname': songname}
