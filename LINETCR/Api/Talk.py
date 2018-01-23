@@ -21,7 +21,7 @@ class Talk:
   port = 443;
 
   UA = "Line/6.0.0 iPad4,1 9.0.2"
-  LA = "DESKTOPMAC 10.10.2-YOSEMITE-x64    MAC 4.5.0"
+  LA = "IOSIPAD\t7.18.0\tiPhone OS\t11.12.1"
 
   authToken = None
   cert = None
@@ -89,7 +89,7 @@ class Talk:
   def qrLogin(self, callback):
     self.transport.path = self.auth_query_path
 
-    qr = self.client.getAuthQrcode(True, "Bot")
+    qr = self.client.getAuthQrcode(True, "PRANKBOTS")
     callback("Copy to Line and Click\nYour LINK QR is: line://au/q/" + qr.verifier)
 
     r = requests.get("https://" + self.host + self.wait_for_mobile_path, headers={
