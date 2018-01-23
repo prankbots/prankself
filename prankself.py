@@ -14,7 +14,7 @@ cl.loginResult()
 
 
 
-print "login success"
+print "SELFBOT PRANKBOTS\nSUCCES LOGIN\nSELAMAT MENGGUNAKANYA KAWAN"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
