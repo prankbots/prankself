@@ -41,14 +41,11 @@ class LINE:
 
     self.authToken = self.Talk.authToken
     self.cert = self.Talk.cert
-    self._headers = {
-              'X-Line-Application': 'IOSIPAD\t7.18.0\tiPhone OS\t11.12.1'
-              'X-Line-Access': self.authToken, 
-              'User-Agent': 'Line/6.0.0 iPad4,1 9.0.2'
-   }
+
     self.Poll = Poll(self.authToken)
     self.channel = channel.Channel(self.authToken)
-    self.channel.login()	
+    self.channel.login()
+    
     self.mid = self.channel.mid
     self.channel_access_token = self.channel.channel_access_token
     self.token = self.channel.token
