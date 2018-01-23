@@ -427,8 +427,8 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("T.E.B")
-      print("mid -> " + prof.mid)
-      print("name -> " + prof.displayName)
-      print("authToken -> " + self.authToken)
+      print("PRANKBOTS")
+      print("YOURMID= " + prof.mid)
+      print("YOURNAME= " + prof.displayName)
+      print("TOKETMU= " + self.authToken)
       print("cert -> " + self.cert if self.cert is not None else "")
