@@ -2958,8 +2958,7 @@ def bot(op):
                 cl.sendText(msg.to, "★[TRANSLATE]★\nTr-id ☆to indonesia☆\nTr-en ☆to english☆\nTr-jap ☆to japan☆\nTr-thai ☆to thailand☆\n_______________")
 
 #---------------------------------------------------
-            #elif "ATM" in msg.text:
-				cl.sendText(msg.to, "==BANK MANDIRI==\nno req:\n1270007723859\natas nama:\nSRI ROHANA")
+            #CROT
 #---------------------------------------------------
             elif "Pict @" in msg.text:
                 print "[Command]dp executing"
